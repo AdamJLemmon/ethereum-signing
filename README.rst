@@ -26,7 +26,7 @@ Note: ``truffle version 4.1.14`` and ``web3 version 0.20.6``
 
 Starting from the beginning a brand new account may be generated. The address and private key may be accessed directly from the new wallet:
 
-.. code-clock:: JavaScript
+.. code-block:: JavaScript
 
     const bip39 = require('bip39');
     const hdkey = require('ethereumjs-wallet/hdkey');
@@ -40,20 +40,20 @@ Starting from the beginning a brand new account may be generated. The address an
 
 Then the data to be signed can be specified and the hash taken:
 
-.. code-clock:: JavaScript
+.. code-block:: JavaScript
 
     const messageToSign = 'adamjlemmon';
     const hash = web3.sha3(messageToSign);
 
 Finally, this data may be signed:
 
-.. code-clock:: JavaScript
+.. code-block:: JavaScript
 
     const sig = await generateSignature(hash, privateKey);
 
 Where ``generateSignature`` is the following:
     
-.. code-clock:: JavaScript
+.. code-block:: JavaScript
 
     const ethUtil = require("ethereumjs-util");
 
