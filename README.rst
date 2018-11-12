@@ -12,7 +12,7 @@ The test case will:
 Usage
 =====
 
-.. code-block: console
+.. code-block:: console
 
     https://github.com/AdamJLemmon/ethereum-signing.git
     cd ethereum-signing
